@@ -24,7 +24,7 @@ public class UserBasedRecommendation {
             DataModel datamodel = new FileDataModel(new File("output.csv"));
 
             //Step 2:- Create UserSimilarity or ItemSimilarity Matrix
-            UserSimilarity similarity = new PearsonCorrelationSimilarity(datamodel);
+            UserSimilarity similarity = new LogLikelihoodSimilarity(datamodel);
 
             //Step 3:- Create UserNeighbourHood object. (No Need to create ItemNeighbourHood object while creating
             //Item based Recommendation)

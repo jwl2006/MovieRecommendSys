@@ -1,0 +1,10 @@
+ReadMe:
+1. The columns that are not related to USERID, ITEMID and value were deleted in the original data. The file was saved in csv format.
+2. The csv file then was processed by the python script(data.py) to format it as follows:
+         USERID, itemID, value
+   The N/A items was ommited in this process.
+
+   The format to use data.py is:
+   python data.py input.csv output.csv
+3. The preprocessed data was used as input and feed into the recommendation algorithm.
+
